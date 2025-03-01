@@ -3,64 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritvik Ranjan - Portfolio</title>
-    <!-- We can add CSS styling here -->
+    <title>Ritvik - Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Ritvik Ranjan</h1>
-        <nav>
-            <ul>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#leadership">Leadership</a></li>
-                <li><a href="#volunteering">Volunteering</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>An accomplished student at Wheeler Magnet High School with a passion for mathematics, science, and community service.</p>
-        <p>Contact: ritvikranjan@gmail.com | (470) 430-7972</p>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Ritvik Ranjan</h1>
+            <p id="typed-text"></p>
+        </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <h3>Wheeler Magnet High School | Class of 2026</h3>
-        <ul>
-            <li>GPA: 4.0 UW | 4.67 W</li>
-            <li>SAT: 1570</li>
-            <li>Notable AP Scores: Multiple 5's including Computer Science, Physics, Biology, Calculus BC</li>
-        </ul>
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="images/RitvikHeadshot.png" alt="Ritvik Headshot" class="about-headshot">
+                <p>A highly motivated and academically driven student...</p>
+            </div>
+        </div>
     </section>
 
     <section id="experiences">
-        <h2>Key Experiences</h2>
-        <div class="experience-item">
-            <h3>GT NASA Mini Payload Competition Winner</h3>
-            <p>One of two state-wide winners, working on improving high-altitude signals communication</p>
+        <div class="section-content">
+            <h2>Experiences</h2>
+            <p>I value my experiences, and I am always looking for more.</p>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>GT NASA Mini Payload Competition</h3>
+                    <div class="experience-image" data-link="nasa.html"></div>
+                </div>
+                <div class="experience-item">
+                    <h3>NLP Research</h3>
+                    <div class="experience-image" data-link="nlp.html"></div>
+                </div>
+                </div>
         </div>
-        <!-- Add more experiences -->
     </section>
 
-    <section id="leadership">
-        <h2>Leadership Roles</h2>
-        <ul>
-            <li>Georgia Chapter Co-Head, Science Nexus</li>
-            <li>President, Wheeler Math Team</li>
-            <li>President, Wheeler Science Olympiad</li>
-            <li>President, Wheeler Helen Ruffin Reading Bowl Team</li>
-        </ul>
+    <section id="clubs">
+        <div class="section-content">
+            <h2>Clubs</h2>
+            <p>I enjoy my clubs at school so much, from leading to competing.</p>
+            <div class="club-grid">
+                <div class="club-item">
+                    <h3>Wheeler Math Team</h3>
+                    <div class="club-image" data-link="math.html"></div>
+                </div>
+                <div class="club-item">
+                    <h3>Wheeler Science Olympiad</h3>
+                    <div class="club-image" data-link="science.html"></div>
+                </div>
+                </div>
+        </div>
     </section>
 
-    <section id="volunteering">
-        <h2>Community Impact</h2>
-        <div class="volunteer-item">
-            <h3>FOCUS Digital Event Coordinator</h3>
-            <p>70+ hours working with children with physical and developmental disabilities</p>
+    <section id="community">
+        <div class="section-content">
+            <h2>Community Impact</h2>
+            <div class="community-grid">
+                <div class="community-item">
+                    <h3>FOCUS</h3>
+                    <div class="community-image" data-link="focus.html"></div>
+                </div>
+                <div class="community-item">
+                    <h3>Eye Level Learning Center</h3>
+                    <div class="community-image" data-link="eyelevel.html"></div>
+                </div>
+                </div>
         </div>
-        <!-- Add more volunteering experiences -->
     </section>
+
+    <section id="academics">
+        <div class="section-content">
+            <h2>Academics</h2>
+            <p>Academics is a large part of my life, and I work hard to succeed.</p>
+            <div class="academic-details">
+                <p>GPA: 4.0 UW, 4.67 W</p>
+                <p>SAT: 1570</p>
+                <p>PSAT: 1500</p>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Reach Me</h2>
+            <p>Email: your.email@example.com</p>
+            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
