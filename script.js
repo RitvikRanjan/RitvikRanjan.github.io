@@ -1,4 +1,5 @@
 // ... (Particles.js configuration)
+
 // Add click event listeners to experience, club, and community items
 // ...
 
