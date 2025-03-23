@@ -57,3 +57,23 @@ function type() {
     if (charIndex < texts[textIndex].length) {
         typedTextElement.textContent += texts[textIndex].charAt(charIndex);
         charIndex++;
+        setTimeout(type, 100);
+    } else {
+        setTimeout(erase, 1500);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        typedTextElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 50);
+    } else {
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, 1000);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    type();
+});
