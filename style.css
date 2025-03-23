@@ -1,7 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #DCD7C9;
     background-color: #2C3930;
     overflow-x: hidden;
@@ -44,6 +41,34 @@ body {
     border-radius: 10px;
 }
 
+.section-title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #A27B5C;
+    animation: title-underline 4s ease-in-out infinite alternate;
+}
+
+@keyframes title-underline {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .about-container {
     display: flex;
     align-items: center;
@@ -62,6 +87,15 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+}
+
+.club-grid {
+    justify-content: center; /* Center club grid items */
+}
+
+.club-item-centered {
+    grid-column: 1 / -1; /* Make the centered club item span full width */
+    justify-self: center; /* Center the item within its grid area */
 }
 
 .experience-item, .club-item, .community-item {
@@ -116,36 +150,6 @@ footer {
     0% { transform: translateY(0) }
     50% { transform: translateY(-10px) }
     100% { transform: translateY(0) }
-}
-
-.section-title {
-    text-align: center;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 3px;
-    background-color: #A27B5C;
-    animation: title-underline 4s ease-in-out infinite alternate;
-}
-
-@keyframes title-underline {
-    0% { width: 0; }
-    100% { width: 100%; }
-}
-
-.club-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: center;
 }
 
 .academic-details {
